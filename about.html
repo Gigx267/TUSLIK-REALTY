@@ -149,10 +149,10 @@
         <!-- Header Start -->
          <!-- Page Header Start -->
         
-        <!-- Page Header End -->
+<!-- Page Header End -->
 <div class="container-fluid bg-breadcrumb">
     <div class="video-background">
-        <video autoplay loop muted>
+        <video autoplay loop muted playsinline>
             <source src="./v9.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -166,6 +166,31 @@
         </ol>    
     </div>
 </div>
+
+<style>
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    pointer-events: none;
+}
+</style>
 <!-- Header End -->
 
 <style>
@@ -272,7 +297,7 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="feature-img">
-                    <img class="img-fluid" src="https://img.freepik.com/free-photo/door-opening-revealing-beautiful-city_23-2149768547.jpg?t=st=1742649406~exp=1742653006~hmac=aa204762bf1b2fd3f0bdf09d79c0b65f14e646d6afbdde3aa131dec228c6cfce&w=900" alt="">
+                    <img class="img-fluid" src="https://img.freepik.com/free-psd/3d-house-property-illustration_23-2151682356.jpg?t=st=1742668368~exp=1742671968~hmac=6fbca582781e7227a4c6838d2808ee3e2662512f7ee0d89c8124133d099d4c14&w=2000" alt="">
                  
                 </div>
             </div>
